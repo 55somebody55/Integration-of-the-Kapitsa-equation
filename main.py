@@ -13,7 +13,7 @@ cos = numpy.cos
 
 # Constants:
 
-h = 1
+h = 0.01
 time_start = 0
 time_end = 180
 x_axis = np.arange(time_start, time_end, h)
