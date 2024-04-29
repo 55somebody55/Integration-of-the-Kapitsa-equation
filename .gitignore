@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+.pytest_cache
+.idea/
+/.coverage
+/htmlcov
+/__pycache__
