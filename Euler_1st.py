@@ -15,6 +15,7 @@ class EulerFirst:
         self.F = [F0] * round((time_end - time_start) / h)
         self.z = [f0] * round((time_end - time_start) / h)
         self.time = time_start
+        self.f = [f0] * round((time_end - time_start) / h)
         error = -50
 
         for i in range(1, round(len(self.F))):
@@ -23,5 +24,5 @@ class EulerFirst:
             self.time += h
 
     def count(self):
-        return self.F
+        return self.F, self.z
 

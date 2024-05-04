@@ -22,5 +22,5 @@ class EulerFirstM:
             self.F[i] = self.z[i] * h + self.F[i-1]
 
     def count(self):
-        return self.F
+        return self.F, self.z
 

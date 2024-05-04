@@ -24,4 +24,4 @@ class EulerThird:
             self.time += h
 
     def count(self):
-        return self.F
+        return self.F, self.z
