@@ -2,3 +2,5 @@
 \contentsline {section}{\numberline {1}Введение}{5}{}%
 \contentsline {section}{\numberline {2}Выбор метода интегрирования}{6}{}%
 \contentsline {section}{\numberline {3}Проверка метода с помощью тестовой задачи}{7}{}%
+\contentsline {section}{\numberline {4}Интегрирование уравнения Капицы}{8}{}%
+\contentsline {section}{\numberline {5}Заключение}{12}{}%

@@ -15,9 +15,9 @@ ln = numpy.log
 
 # Constants:
 
-h = 0.0001
+h = 0.00001
 time_start = 0
-time_end = 5
+time_end = 20
 x_axis = np.arange(time_start, time_end, h)
 
 # Input conditions:
@@ -28,9 +28,9 @@ f0 = 0
 
 # 2) values
 
-A = 10
-w = 100
-F0 = 0.1
+A = 0.5
+w = 200
+F0 = 0.05
 
 if __name__ == '__main__':
 
@@ -42,31 +42,31 @@ if __name__ == '__main__':
     test_epsilon, test_x_axis, test_runge_kutt_data, test_runge_x_axis = TestRungeKutt(3, 0, 10, 0, time_start, time_end).count()
 
     # Configuring graphics
-    fig, ax = plt.subplots(2, 4, figsize=(20, 7))
+    fig, ax = plt.subplots(2, 1, figsize=(7, 7))
     # plt.setp(ax, xlim=(time_start, time_end), ylim=(-4, 4))
 
     # Drawing graphics
 
-    ax[0, 0].plot(x_axis, euler_first_data, label="f(t)")
-    ax[0, 0].set_title("Euler first")
-    ax[1, 0].plot(euler_first_data, diagram_euler_first_data, label="f(t)")
-    ax[1, 0].set_title("Euler first diagram")
+    # ax[0, 0].plot(x_axis, euler_first_data, label="f(t)")
+    # ax[0, 0].set_title("Euler first")
+    # ax[1, 0].plot(euler_first_data, diagram_euler_first_data, label="f(t)")
+    # ax[1, 0].set_title("Euler first diagram")
+    #
+    # ax[0, 1].plot(x_axis, euler_third_data, label="f(t)")
+    # ax[0, 1].set_title("Euler third")
+    # ax[1, 1].plot(euler_third_data, diagram_euler_third_data, label="f(t)")
+    # ax[1, 1].set_title("Euler third diagram")
 
-    ax[0, 1].plot(x_axis, euler_third_data, label="f(t)")
-    ax[0, 1].set_title("Euler third")
-    ax[1, 1].plot(euler_third_data, diagram_euler_third_data, label="f(t)")
-    ax[1, 1].set_title("Euler third diagram")
+    ax[0].plot(x_axis, runge_kutt_data, label="f(t)")
+    ax[0].set_title("Runge Kutt")
+    ax[1].plot(runge_kutt_data, diagram_runge_kutt_data, label="f(t)")
+    ax[1].set_title("Runge Kutt diagram")
 
-    ax[0, 2].plot(x_axis, runge_kutt_data, label="f(t)")
-    ax[0, 2].set_title("Runge Kutt")
-    ax[1, 2].plot(runge_kutt_data, diagram_runge_kutt_data, label="f(t)")
-    ax[1, 2].set_title("Runge Kutt diagram")
-
-    ax[3, 1].plot(ln(test_x_axis), test_epsilon, label="f(t)")
-    ax[3, 1].set_title("log Runge-Kutt")
-    print(numpy.polyfit(ln(test_x_axis), test_epsilon, 1)[0])
-
-    ax[3, 0].plot(test_runge_x_axis, test_runge_kutt_data, label="f(t)")
-    ax[3, 0].set_title("Test Runge-Kutt")
+    # ax[3, 1].plot(ln(test_x_axis), test_epsilon, label="f(t)")
+    # ax[3, 1].set_title("log Runge-Kutt")
+    # print(numpy.polyfit(ln(test_x_axis), test_epsilon, 1)[0])
+    #
+    # ax[3, 0].plot(test_runge_x_axis, test_runge_kutt_data, label="f(t)")
+    # ax[3, 0].set_title("Test Runge-Kutt")
 
     plt.show()
