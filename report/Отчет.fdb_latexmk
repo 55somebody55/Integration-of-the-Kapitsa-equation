@@ -1,12 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1715174302 "/home/spacestation/University/informatics/project practice/report/Отчет.tex" "Отчет.pdf" "Отчет" 1715174303 0
+["pdflatex"] 1715190864 "/home/spacestation/University/informatics/project practice/report/Отчет.tex" "Отчет.pdf" "Отчет" 1715190864 0
   "/etc/texmf/web2c/texmf.cnf" 1711183507 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/spacestation/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1711215145 3308 eee81981029f67083258db36df06e523 ""
   "/home/spacestation/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1711215139 3312 d199be9bd555944e2403193d58a0256a ""
   "/home/spacestation/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm" 1711215121 3240 c2435f2b5cd66d4930bc29b8df87967e ""
   "/home/spacestation/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm" 1711215134 3256 3daaa33cf35cf3f354983aa3214ecd7f ""
   "/home/spacestation/.texlive2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1728.tfm" 1711215137 3252 92d08740ce00199d6cf9ff4aaada81d1 ""
-  "/home/spacestation/University/informatics/project practice/report/Отчет.tex" 1715174302 4149 d2e0cbe2932504741e3fded261d429de ""
+  "/home/spacestation/University/informatics/project practice/report/Отчет.tex" 1715190863 6369 616f0f78b33bc10c77949fefaa28defa ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -84,9 +84,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1711186128 4643645 d2d1d8b8ba87ed005f4aaf1ce646a79e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1711186202 7908726 17585d1e1ede502f60c3855bd59a06ab ""
   "sources/pend.png" 1715162447 100287 7c54910168dbc3dbdf5dd1833641da1d ""
-  "Отчет.aux" 1715174303 458 cc10d4d24f569713200874b037d6aceb "pdflatex"
-  "Отчет.tex" 1715174302 4149 d2e0cbe2932504741e3fded261d429de ""
-  "Отчет.toc" 1715174303 93 5760c22088a9f7ef9955007401f523df "pdflatex"
+  "Отчет.aux" 1715190864 598 486bb41037cb62887d68f8eb00b33dee "pdflatex"
+  "Отчет.tex" 1715190863 6369 616f0f78b33bc10c77949fefaa28defa ""
+  "Отчет.toc" 1715190864 192 6113030985fa4e91475a8f2e73f32f59 "pdflatex"
   (generated)
   "Отчет.aux"
   "Отчет.log"

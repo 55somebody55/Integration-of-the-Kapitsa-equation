@@ -17,7 +17,7 @@ ln = numpy.log
 
 h = 0.0001
 time_start = 0
-time_end = 50
+time_end = 5
 x_axis = np.arange(time_start, time_end, h)
 
 # Input conditions:
@@ -28,9 +28,9 @@ f0 = 0
 
 # 2) values
 
-A = 0.5
-w = 3.3
-F0 = 1.1
+A = 10
+w = 100
+F0 = 0.1
 
 if __name__ == '__main__':
 
