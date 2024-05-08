@@ -62,11 +62,11 @@ if __name__ == '__main__':
     ax[1, 2].plot(runge_kutt_data, diagram_runge_kutt_data, label="f(t)")
     ax[1, 2].set_title("Runge Kutt diagram")
 
-    ax[1, 3].plot(ln(test_x_axis), test_epsilon, label="f(t)")
-    ax[1, 3].set_title("log Runge-Kutt")
+    ax[3, 1].plot(ln(test_x_axis), test_epsilon, label="f(t)")
+    ax[3, 1].set_title("log Runge-Kutt")
     print(numpy.polyfit(ln(test_x_axis), test_epsilon, 1)[0])
 
-    ax[0, 3].plot(test_runge_x_axis, test_runge_kutt_data, label="f(t)")
-    ax[0, 3].set_title("Test Runge-Kutt")
+    ax[3, 0].plot(test_runge_x_axis, test_runge_kutt_data, label="f(t)")
+    ax[3, 0].set_title("Test Runge-Kutt")
 
     plt.show()
