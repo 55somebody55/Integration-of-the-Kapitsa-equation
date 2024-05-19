@@ -28,21 +28,21 @@ f0 = 0
 
 # 2) values
 
-A = 0.5
-w = 200
-F0 = 0.05
+A = 10
+w = 100
+F0 = 0.1
 
 if __name__ == '__main__':
 
     # Using methods
 
-    euler_first_data, diagram_euler_first_data = EulerFirst(L, f0, A, w, F0, time_start, time_end, h).count()
-    euler_third_data, diagram_euler_third_data = EulerThird(L, f0, A, w, F0, time_start, time_end, h).count()
+    # euler_first_data, diagram_euler_first_data = EulerFirst(L, f0, A, w, F0, time_start, time_end, h).count()
+    # euler_third_data, diagram_euler_third_data = EulerThird(L, f0, A, w, F0, time_start, time_end, h).count()
     runge_kutt_data, diagram_runge_kutt_data = RungeKutt(L, f0, A, w, F0, time_start, time_end, h).count()
-    test_epsilon, test_x_axis, test_runge_kutt_data, test_runge_x_axis = TestRungeKutt(3, 0, 10, 0, time_start, time_end).count()
+    # test_epsilon, test_x_axis, test_runge_kutt_data, test_runge_x_axis = TestRungeKutt(4, 0, 11, 0, time_start, time_end).count()
 
     # Configuring graphics
-    fig, ax = plt.subplots(2, 1, figsize=(7, 7))
+    fig, ax = plt.subplots(2, 1, figsize=(8, 7))
     # plt.setp(ax, xlim=(time_start, time_end), ylim=(-4, 4))
 
     # Drawing graphics
@@ -57,16 +57,22 @@ if __name__ == '__main__':
     # ax[1, 1].plot(euler_third_data, diagram_euler_third_data, label="f(t)")
     # ax[1, 1].set_title("Euler third diagram")
 
+    ax[1].set_xlabel("x(time)")
+    ax[1].set_ylabel("x'(time)")
     ax[0].plot(x_axis, runge_kutt_data, label="f(t)")
     ax[0].set_title("Runge Kutt")
+    ax[0].set_xlabel("time")
+    ax[0].set_ylabel("x(time)")
     ax[1].plot(runge_kutt_data, diagram_runge_kutt_data, label="f(t)")
-    ax[1].set_title("Runge Kutt diagram")
 
-    # ax[3, 1].plot(ln(test_x_axis), test_epsilon, label="f(t)")
-    # ax[3, 1].set_title("log Runge-Kutt")
+    # ax[1].plot(ln(test_x_axis), test_epsilon, label="f(t)")
+    # ax[1].text(-8.5, -18, "log Runge-Kutt", fontsize=12)
+    # ax[1].set_xlabel("ln(tau)")
+    # ax[1].set_ylabel("ln(eps))")
     # print(numpy.polyfit(ln(test_x_axis), test_epsilon, 1)[0])
     #
-    # ax[3, 0].plot(test_runge_x_axis, test_runge_kutt_data, label="f(t)")
-    # ax[3, 0].set_title("Test Runge-Kutt")
-
+    # ax[0].plot(test_runge_x_axis, test_runge_kutt_data, label="f(t)")
+    # ax[0].set_title("Test Runge-Kutt")
+    # ax[0].set_xlabel("time")
+    # ax[0].set_ylabel("x(time)")
     plt.show()

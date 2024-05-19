@@ -22,12 +22,12 @@ class TestRungeKutt:
         self.x_axis = []
         self.TAU_mass = numpy.arange(0.0001, 0.001, 0.0001)
         for h in self.TAU_mass:
-            self.x = [A] * round((time_end - time_start) / h)
-            self.z = [V] * round((time_end - time_start) / h)
             self.x_axis = numpy.arange(time_start, time_end, h)
             self.time = numpy.arange(time_start, time_end, h)
+            self.x = [A] * len(self.x_axis)
+            self.z = [V] * len(self.x_axis)
             self.eps = 0
-            for i in range(1, round(len(self.x))):
+            for i in range(1, len(self.x_axis)):
                 k1z = (-1) * (w ** 2 * self.x[i - 1] + 2 * b * self.z[i - 1]) * h
                 k1x = self.z[i - 1] * h
                 k2z = (-1) * (w ** 2 * (self.x[i - 1] + k1x / 2) + 2 * b * (self.z[i - 1] + k1z / 2)) * h
